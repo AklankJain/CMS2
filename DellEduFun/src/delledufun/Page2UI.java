@@ -26,10 +26,9 @@ public class Page2UI extends javax.swing.JFrame {
         Toolkit tk=Toolkit.getDefaultToolkit();
                 int xsize = (int) tk.getScreenSize().getWidth();
                 int ysize = (int) tk.getScreenSize().getHeight();
-                int resolution = tk.getScreenResolution();
         this.setSize(xsize,ysize);       
     }
-
+   
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -44,7 +43,7 @@ public class Page2UI extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox();
-        jLabel2 = new javax.swing.JLabel();
+        label = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -71,10 +70,10 @@ public class Page2UI extends javax.swing.JFrame {
         getContentPane().add(jComboBox1);
         jComboBox1.setBounds(760, 420, 210, 30);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/delledufun/slide ctc-02.jpg"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 1540, 870);
+        label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/delledufun/slide ctc-02.jpg"))); // NOI18N
+        label.setText("jLabel2");
+        getContentPane().add(label);
+        label.setBounds(0, 0, 1574, 864);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -105,7 +104,6 @@ public class Page2UI extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Page2UI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -116,10 +114,10 @@ public class Page2UI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox jComboBox1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JLabel label;
     // End of variables declaration//GEN-END:variables
 }
